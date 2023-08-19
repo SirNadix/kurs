@@ -1,0 +1,49 @@
+while  and for methodology
+
+i = 2
+while(i <= 100) {
+	drawnNumber = Math.random()
+	console.log(i, drawnNumber)
+	i = i +1	
+}
+
+for(i = 2; i<=100; i++) {
+	console.log(i)
+}
+
+
+while and prompt use
+
+i = 0
+number = prompt('For which number we will be multiple?')
+while(i <=10 ) {
+	console.log(i * number)	
+	i++
+}
+
+for(i = 0; i<=10; i++) {
+	console.log(i * number)
+}
+
+
+
+while, how many things I will buy in relation our wallet
+
+wallet = 3000
+priceOfOneThing = 10
+numberOfProducts = 0
+
+while(wallet >= priceOfOneThing) {
+	wallet = wallet - priceOfOneThing
+	numberOfProdukts = numberOfProducts +1
+}	
+console.log(numberOfProducts)
+
+second way:
+while(wallet >= priceOfOneThing) {
+	wallet-=priceOfOneThing
+	numberOfProducts++
+}
+console.log('status of waller:', wallet, ',' , 'number of products:', numberOfProducts)
+
+

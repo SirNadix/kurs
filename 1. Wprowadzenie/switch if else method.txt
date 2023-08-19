@@ -1,0 +1,65 @@
+Beer and age - if else example
+
+ageOfClientDeclaration = prompt('How old are you?')
+ageOfClientAround = prompt('How old she/he looks like?')
+
+if(ageOfClientDeclaration >= 18) {
+	if(ageOfClientAround >= 18) {
+		console.log(' You could buy everything what you want.')
+	}
+	else {
+		showID = prompt('Is she or he will show ID - write yes is ID will be visible')
+		if(showID == 'yes') {
+			console.log('This is your beer, you look so young, I eant look like you')
+		}
+		else {
+			console.log("Sorry, but without your ID i can bnot sell you a alkohol, it is forbidden.")
+		}
+	}
+}
+else {
+	console.log('Sorry, please back to our shop if yoi will have 18 years old')
+}		
+
+
+Week days - using switch format
+
+dayOfWeek = 'friday'
+switch (dayOfWeek) {
+	case 'monday':
+		console.log('New day, wake up')
+		break
+	case 'friday':
+		console.log('We can start a weekend')
+		break
+	case 'saturday':
+	case 'sunday':
+		console.log('weekend')
+		break
+	default:
+		console.log('Something went wrong, two position upper we have friday')
+
+}
+
+
+Policeman 
+
+correctSpeed = prompt('what speed should be there?')
+speedOfCar = prompt('SHow speed on photoradar')
+
+if(speedOfCar>correctSpeed) {
+	if(speedOfCar - correctSpeed <= 10) {
+		console.log('You received mandate 100 PLN')
+	}
+	else if (speedOfCar - correctSpeed <= 50) {
+		console.log('You received mandate 400 PLN')
+	}
+	else {
+		console.log('You received mandate 500PLN and you loose your driver licence')
+	}
+}
+else {
+	console.log('ooops, it is fine')
+}
+
+`

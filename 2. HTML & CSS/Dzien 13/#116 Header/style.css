@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    /* max-width: 1920px;
+    margin: 0 auto;  to mozna dawac do wysrodkowania */
+    background-image: url("bg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header > * {
+    position: absolute;
+}
+
+.logo {
+    top: 30px;
+    left: 60px;
+}
+
+header h1 {
+    top: 40%;
+    padding: 20px;
+    font-size: 60px;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+    text-align: center;
+}
+
+header button {
+    bottom: 80px;
+    right: 80px;
+    font-size: 40px;
+    padding: 10px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: 3s;
+}
+
+header button:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+@media (max-height: 1024px) {
+    header {
+        background-size: cover;
+    }
+}
+
+@media (max-height: 812px) and (orientation:landscape) {
+    header img{
+        width: 25%;
+    }
+    header h1 {
+        font-size: 26px;
+    }
+    header button {
+        bottom: 30px;
+        font-size: 20px;
+    }
+}
+
+@media (max-height: 533px) and (orientation:landscape) {
+
+    header h1 {
+        top: 40%;
+        font-size: 20px;
+    }
+    header button {
+        bottom: 30px;
+        font-size: 18px;
+    }
+}
+
+@media (max-height: 414px) and (orientation:portrait) {
+    header img{
+        width: 80%;
+        left: 10%;
+    }
+    header h1 {
+        top: 35%;
+        font-size: 30px;   
+        line-height: 1.8;
+    }
+    header button {
+        right: 10%;
+        width: 80%;
+        font-size: 32px;
+    }
+}
+
+@media (max-height: 360px) and (orientation:portrait) {
+    header button { 
+        font-size: 26px;
+    }
+}
+
+@media (max-height: 320px) and (orientation:portrait) {
+    header h1 {
+        font-size: 24px;   
+    }
+}
+
+section {
+    /* margin-top: 80px; */
+    width: 86%;
+    margin: 80px auto 0 auto;  
+}
+
+section p {
+    line-height: 170%;
+    font-size: 14px;
+}

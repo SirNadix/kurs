@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 90%;
+    max-width: 1024px;
+    background-color: black;
+    margin: 30px auto;
+    padding: 0 20px;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 0px;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 20%;
+    background-color: #555;
+}
+
+nav ul li a {
+    display: block;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: Arial;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 20px ;
+    text-align: center;
+}
+
+nav ul li a:hover{
+    background-color: #555;
+}
+
+section {
+    height: 300px;
+    background-color: #ddd;
+}

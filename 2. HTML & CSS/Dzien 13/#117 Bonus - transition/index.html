@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        section {
+            position: relative;
+            height: 100vh;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 60px;
+        }
+
+        .s1 {
+            background-color: darkcyan;
+        }
+
+        .s2 {
+            background-color: royalblue;
+        }
+
+        section div {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            width: 30px;
+            height: 30px;
+            border: 5px solid white;
+            border-radius: 50%;
+        }
+
+        section h1 {
+            position: absolute;
+            transition: 1s;
+        }
+
+        .s1 h1 {
+            top: 40%;
+            left: -150%;
+            /* ease all */
+        }
+
+        .s1 div:hover+h1 {
+            left: 10%;
+            /* color: red; */
+        }
+
+        .s2 h1 {
+            top: 40%;
+            left: 10%;
+            opacity: 0;
+            /* ease all */
+        }
+
+        .s2 div:hover+h1 {
+            opacity: 1;
+        }
+
+        div {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="s1">
+        <div></div>
+        <h1>TYTUL PIERWSZY</h1>
+    </section>
+    <section class="s2">
+        <div></div>
+        <h1>TYTUL DRUGI</h1>
+    </section>
+</body>
+
+</html>
